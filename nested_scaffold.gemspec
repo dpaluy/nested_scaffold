@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{nested_scaffold}
-  s.version = "0.1.0"
+  s.name = "nested_scaffold"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Akira Matsuda"]
-  s.date = %q{2010-12-12}
-  s.description = %q{Nested scaffold generator for Rails 3}
-  s.email = %q{ronnie@dio.jp}
+  s.date = "2011-12-25"
+  s.description = "Nested scaffold generator for Rails 3"
+  s.email = "ronnie@dio.jp"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/generators/USAGE",
     "lib/generators/active_record/active_record_generator.rb",
+    "lib/generators/assets/assets_generator.rb",
     "lib/generators/base.rb",
     "lib/generators/erb/erb_generator.rb",
     "lib/generators/erb/templates/_form.html.erb",
@@ -43,21 +44,19 @@ Gem::Specification.new do |s|
     "lib/generators/nested_scaffold_generator.rb",
     "lib/generators/scaffold_controller/scaffold_controller_generator.rb",
     "lib/generators/scaffold_controller/templates/controller.rb",
-    "lib/generators/stylesheets/stylesheets_generator.rb",
     "lib/generators/test_unit/helper_generator.rb",
     "lib/generators/test_unit/model_generator.rb",
     "lib/generators/test_unit/scaffold_generator.rb",
     "lib/generators/test_unit/templates/functional_test.rb",
     "nested_scaffold.gemspec"
   ]
-  s.homepage = %q{http://github.com/amatsuda/nested_scaffold}
+  s.homepage = "http://github.com/amatsuda/nested_scaffold"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Nested scaffold generator for Rails 3}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Nested scaffold generator for Rails 3"
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
